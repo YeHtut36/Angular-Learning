@@ -1,0 +1,13 @@
+<div class="debug">Star Ratings Component Loaded</div>
+<div class="debug">Rating: {{ rating }}</div>
+<div class="debug">Stars: {{ stars }}</div>
+<div class="star-ratings">
+  <i
+    *ngFor="let star of stars; let i = index"
+    class="fa"
+    [class.fa-solid]="i < rating"
+    [class.fa-regular]="i >= rating"
+    (click)="setRating(i + 1)"
+  >
+  </i>
+</div>

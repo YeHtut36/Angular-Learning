@@ -1,0 +1,22 @@
+.star-ratings {
+  display: flex;
+  gap: 5px;
+
+  .fa {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .fa-solid {
+    color: #f4b400; // Gold color for selected stars
+  }
+
+  .fa-regular {
+    color: #d3d3d3; // Gray color for unselected stars
+  }
+}
